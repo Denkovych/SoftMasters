@@ -8,6 +8,7 @@ li {
 
 .name {
   text-align: center;
+  margin-bottom: 31px;
 }
 .name__lable {
   font-family: Titan One;
@@ -28,7 +29,8 @@ li {
 
   color: var(--accent-color);
 }
-.card__item {
+.products__item {
+  background-image: url('./images/favicon.png');
   margin: auto;
   width: 220px;
   height: 485px;

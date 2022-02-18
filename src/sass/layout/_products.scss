@@ -30,11 +30,63 @@ li {
   color: var(--accent-color);
 }
 .products__item {
+  padding-top: 113px;
+  position: relative;
   margin: auto;
-  width: 220px;
-  height: 485px;
-  background-color: var(--hero-bg-color);
+  width: 280px;
+  height: 598px;
+
   & + & {
     margin-top: 17px;
   }
+}
+.products__card {
+  position: relative;
+  background-color: var(--hero-bg-color);
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+.products__item:nth-child(2n) .products__card {
+  background-color: rgba(240, 209, 165, 1);
+}
+.products__item:nth-child(3n) .products__card {
+  background-color: rgba(194, 226, 151, 1);
+}
+
+.products__item::before {
+  content: '';
+  background-image: url('../images/products/home-pic1.png');
+  position: absolute;
+  width: 249px;
+  height: 252px;
+  top: 0;
+  left: 15px;
+}
+.products__item:nth-child(2n)::before {
+  background-image: url('../images/products/ice-coffe.png');
+}
+.products__item:nth-child(3n)::before {
+  background-image: url('../images/products/milk-shake.png');
+}
+.products__title {
+  font-family: Titan One;
+  letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: #fff;
+
+  padding-top: 161px;
+  text-align: center;
+}
+.products__card::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/products/tochka.png');
+  bottom: 265px;
+  right: 127px;
+  width: 26px;
+  height: 6px;
 }

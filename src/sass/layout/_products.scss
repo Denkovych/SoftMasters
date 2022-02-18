@@ -124,10 +124,6 @@ li {
   height: 252px;
   top: 0;
   left: 15px;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/products/ice-cream-mob-x2.png);
-  }
 }
 .products__item:nth-child(2n)::before {
   background-image: url('../images/products/ice-coffe.png');

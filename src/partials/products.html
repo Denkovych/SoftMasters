@@ -7,11 +7,15 @@
         <ul class="products__list">
             <li class="products__item">
                 <div class="products__card">
+                    
                     <h3 class="products__title">ICE CREAM</h3>
                         <p class="products__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
                         </p>
-                    <button class="product__btn" type="button"></button>
+                        <div class="products__info products__info--ishidden" products-info>
+                        <button type="button" products-info-close>111</button>
+                        </div>
+                    <button class="products__btn" type="button" products-info-open></button>
                 </div>
             </li>
             <li class="products__item">
@@ -20,7 +24,7 @@
                         <p class="products__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. 
                         </p>
-                    <button class="product__btn" type="button"></button>
+                    <button class="products__btn" type="button"></button>
                 </div>
             </li>
             <li class="products__item">
@@ -29,9 +33,10 @@
                         <p class="products__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
                         </p>
-                    <button class="product__btn" type="button"></button>
+                    <button class="products__btn" type="button"></button>
                 </div>
             </li>
         </ul>
     </div>
+    <script src="./products-info.js"></script>
 </section>
